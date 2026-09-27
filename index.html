@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>TaskFlow Pro</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- =====================================================
+         AUTH SECTION
+    ====================================================== -->
+
+  <section id="authSection" class="auth-section">
+
+    <!-- LEFT SIDE -->
+    <div class="auth-visual">
+
+      <div class="visual-glow glow-one"></div>
+      <div class="visual-glow glow-two"></div>
+
+      <div class="visual-content">
+
+        <!-- Logo -->
+        <div class="brand">
+          <div class="brand-icon">
+            <i class="fa-solid fa-check"></i>
+          </div>
+
+          <span>TaskFlow<span class="brand-pro"> Pro</span></span>
+        </div>
+
+        <!-- Hero -->
+        <div class="hero-content">
+
+          <div class="eyebrow">
+            <span></span>
+            SMART PRODUCTIVITY
+          </div>
+
+          <h1>
+            Turn your plans
+            <br>
+            into <span>progress.</span>
+          </h1>
+
+          <p>
+            Organize your tasks, manage priorities,
+            and stay focused on what actually matters.
+          </p>
+
+        </div>
+
+
+        <!-- Mini Dashboard Preview -->
+        <div class="preview-card">
+
+          <div class="preview-header">
+            <div>
+              <small>MY PRODUCTIVITY</small>
+              <h3>Today's Overview</h3>
+            </div>
+
+            <div class="preview-icon">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+          </div>
+
+          <div class="progress-area">
+
+            <div class="progress-text">
+              <span>Daily progress</span>
+              <strong>82%</strong>
+            </div>
+
+            <div class="progress-bar">
+              <div class="progress-fill"></div>
+            </div>
+
+          </div>
+
+
+          <div class="mini-tasks">
+
+            <div class="mini-task completed">
+              <div class="task-check">
+                <i class="fa-solid fa-check"></i>
+              </div>
+
+              <span>Complete project design</span>
+
+              <i class="fa-solid fa-circle-check status"></i>
+            </div>
+
+
+            <div class="mini-task completed">
+              <div class="task-check">
+                <i class="fa-solid fa-check"></i>
+              </div>
+
+              <span>Review today's tasks</span>
+
+              <i class="fa-solid fa-circle-check status"></i>
+            </div>
+
+
+            <div class="mini-task">
+              <div class="task-check empty"></div>
+
+              <span>Prepare tomorrow's plan</span>
+
+              <i class="fa-regular fa-clock status"></i>
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- Bottom Features -->
+        <div class="visual-features">
+
+          <div>
+            <i class="fa-solid fa-bolt"></i>
+
+            <div>
+              <strong>Stay focused</strong>
+              <span>One task at a time</span>
+            </div>
+          </div>
+
+
+          <div>
+            <i class="fa-solid fa-layer-group"></i>
+
+            <div>
+              <strong>Stay organized</strong>
+              <span>Everything in one place</span>
+            </div>
+          </div>
+
+
+          <div>
+            <i class="fa-solid fa-chart-simple"></i>
+
+            <div>
+              <strong>Track progress</strong>
+              <span>See your productivity</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+
+    <!-- RIGHT SIDE -->
+    <div class="auth-panel">
+
+      <div class="auth-card">
+
+
+        <!-- ================= LOGIN ================= -->
+
+        <div id="loginBox">
+
+          <div class="auth-card-top">
+
+            <div class="mobile-brand">
+              <div class="brand-icon">
+                <i class="fa-solid fa-check"></i>
+              </div>
+
+              <span>TaskFlow<span class="brand-pro"> Pro</span></span>
+            </div>
+
+            <div class="auth-badge">
+              <i class="fa-solid fa-shield-halved"></i>
+              Secure workspace
+            </div>
+
+          </div>
+
+
+          <div class="auth-heading">
+
+            <h2>Welcome back</h2>
+
+            <p>
+              Sign in to continue managing your tasks.
+            </p>
+
+          </div>
+
+
+          <form id="loginForm">
+
+
+            <!-- Email -->
+            <div class="input-group">
+
+              <label for="loginEmail">
+                Email address
+              </label>
+
+              <div class="input-wrapper">
+
+                <i class="fa-regular fa-envelope input-icon"></i>
+
+                <input type="email" id="loginEmail" placeholder="you@example.com" autocomplete="email" required>
+
+              </div>
+
+            </div>
+
+
+            <!-- Password -->
+            <div class="input-group">
+
+              <div class="label-row">
+
+                <label for="loginPassword">
+                  Password
+                </label>
+
+              </div>
+
+              <div class="input-wrapper">
+
+                <i class="fa-solid fa-lock input-icon"></i>
+
+                <input type="password" id="loginPassword" placeholder="Enter your password"
+                  autocomplete="current-password" required>
+
+                <button type="button" class="password-toggle" id="loginPasswordToggle" aria-label="Show password">
+
+                  <i class="fa-regular fa-eye"></i>
+
+                </button>
+
+              </div>
+
+            </div>
+
+
+            <!-- Message -->
+            <div id="loginMessage" class="form-message">
+            </div>
+
+
+            <!-- Login Button -->
+            <button type="submit" class="primary-btn">
+
+              <span>Sign in</span>
+
+              <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+
+          </form>
+
+
+          <!-- Register Switch -->
+          <div class="auth-switch">
+
+            <span>Don't have an account?</span>
+
+            <button type="button" id="showRegisterBtn">
+
+              Create account
+
+            </button>
+
+          </div>
+
+
+          <div class="security-note">
+
+            <i class="fa-solid fa-lock"></i>
+
+            Your account information is securely handled.
+
+          </div>
+
+        </div>
+
+
+
+        <!-- ================= REGISTER ================= -->
+
+        <div id="registerBox" class="hidden">
+
+
+          <div class="auth-card-top">
+
+            <div class="mobile-brand">
+
+              <div class="brand-icon">
+                <i class="fa-solid fa-check"></i>
+              </div>
+
+              <span>
+                TaskFlow<span class="brand-pro"> Pro</span>
+              </span>
+
+            </div>
+
+            <div class="auth-badge">
+              <i class="fa-solid fa-user-plus"></i>
+              Create account
+            </div>
+
+          </div>
+
+
+          <div class="auth-heading">
+
+            <h2>Create your account</h2>
+
+            <p>
+              Start organizing your work with TaskFlow Pro.
+            </p>
+
+          </div>
+
+
+          <form id="registerForm">
+
+
+            <!-- First + Last Name -->
+            <div class="name-grid">
+
+              <div class="input-group">
+
+                <label for="firstName">
+                  First name
+                </label>
+
+                <div class="input-wrapper">
+
+                  <i class="fa-regular fa-user input-icon"></i>
+
+                  <input type="text" id="firstName" placeholder="First name" required>
+
+                </div>
+
+              </div>
+
+
+              <div class="input-group">
+
+                <label for="lastName">
+                  Last name
+                </label>
+
+                <div class="input-wrapper">
+
+                  <i class="fa-regular fa-user input-icon"></i>
+
+                  <input type="text" id="lastName" placeholder="Last name" required>
+
+                </div>
+
+              </div>
+
+            </div>
+
+
+            <!-- Email -->
+            <div class="input-group">
+
+              <label for="registerEmail">
+                Email address
+              </label>
+
+              <div class="input-wrapper">
+
+                <i class="fa-regular fa-envelope input-icon"></i>
+
+                <input type="email" id="registerEmail" placeholder="you@example.com" autocomplete="email" required>
+
+              </div>
+
+            </div>
+
+
+            <!-- Password -->
+            <div class="input-group">
+
+              <label for="registerPassword">
+                Password
+              </label>
+
+              <div class="input-wrapper">
+
+                <i class="fa-solid fa-lock input-icon"></i>
+
+                <input type="password" id="registerPassword" placeholder="Create a password" autocomplete="new-password"
+                  required>
+
+                <button type="button" class="password-toggle" id="registerPasswordToggle" aria-label="Show password">
+
+                  <i class="fa-regular fa-eye"></i>
+
+                </button>
+
+              </div>
+
+            </div>
+
+
+            <!-- Confirm Password -->
+            <div class="input-group">
+
+              <label for="confirmPassword">
+                Confirm password
+              </label>
+
+              <div class="input-wrapper">
+
+                <i class="fa-solid fa-lock input-icon"></i>
+
+                <input type="password" id="confirmPassword" placeholder="Confirm your password"
+                  autocomplete="new-password" required>
+
+                <button type="button" class="password-toggle" id="confirmPasswordToggle" aria-label="Show password">
+
+                  <i class="fa-regular fa-eye"></i>
+
+                </button>
+
+              </div>
+
+            </div>
+
+
+            <!-- Register Message -->
+            <div id="registerMessage" class="form-message">
+            </div>
+
+
+            <!-- Register Button -->
+            <button type="submit" class="primary-btn">
+
+              <span>Create account</span>
+
+              <i class="fa-solid fa-arrow-right"></i>
+
+            </button>
+
+
+          </form>
+
+
+          <!-- Login Switch -->
+          <div class="auth-switch">
+
+            <span>Already have an account?</span>
+
+            <button type="button" id="showLoginBtn">
+
+              Sign in
+
+            </button>
+
+          </div>
+
+
+          <div class="security-note">
+
+            <i class="fa-solid fa-shield-halved"></i>
+
+            Your information stays protected.
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+
+  <!-- =====================================================
+         APP SECTION
+    ====================================================== -->
+
+  <section id="appSection" class="app-section hidden">
+
+
+    <!-- Header -->
+    <header class="app-header">
+
+      <div class="app-brand">
+
+        <div class="brand-icon">
+          <i class="fa-solid fa-check"></i>
+        </div>
+
+        <span>
+          TaskFlow<span class="brand-pro"> Pro</span>
+        </span>
+
+      </div>
+
+
+      <div class="user-area">
+
+        <div class="user-avatar">
+          <i class="fa-regular fa-user"></i>
+        </div>
+
+        <div class="user-info">
+          <span>Welcome back</span>
+          <strong id="userName">User</strong>
+        </div>
+
+        <button id="logoutBtn" class="logout-btn">
+
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+          Logout
+
+        </button>
+
+      </div>
+
+    </header>
+
+
+
+    <!-- Main App -->
+    <main class="app-container">
+
+
+      <div class="app-title-row">
+
+        <div>
+
+          <span class="section-label">
+            YOUR WORKSPACE
+          </span>
+
+          <h1>Manage your tasks</h1>
+
+          <p>
+            Plan your day and keep your work moving forward.
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- Add Task -->
+      <div class="task-create-card">
+
+        <div class="task-input-main">
+
+          <i class="fa-solid fa-plus"></i>
+
+          <input type="text" id="taskInput" placeholder="What needs to be done?">
+
+        </div>
+
+
+        <select id="priority">
+
+          <option value="Low">Low priority</option>
+          <option value="Medium" selected>
+            Medium priority
+          </option>
+          <option value="High">High priority</option>
+
+        </select>
+
+
+        <input type="date" id="dueDate">
+
+
+        <button id="addBtn" class="primary-btn add-task-btn">
+
+          <i class="fa-solid fa-plus"></i>
+
+          Add task
+
+        </button>
+
+      </div>
+
+
+
+      <!-- Toolbar -->
+      <div class="task-toolbar">
+
+        <div class="search-box">
+
+          <i class="fa-solid fa-magnifying-glass"></i>
+
+          <input type="text" id="searchInput" placeholder="Search tasks...">
+
+        </div>
+
+
+        <button id="clearBtn" class="clear-btn">
+
+          <i class="fa-regular fa-trash-can"></i>
+
+          Clear all
+
+        </button>
+
+      </div>
+
+
+
+      <!-- Stats -->
+      <div class="stats-grid">
+
+        <div class="stat-card">
+
+          <div class="stat-icon blue">
+            <i class="fa-solid fa-list-check"></i>
+          </div>
+
+          <div>
+            <span>Total tasks</span>
+            <strong id="totalTask">0</strong>
+          </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+          <div class="stat-icon green">
+            <i class="fa-solid fa-circle-check"></i>
+          </div>
+
+          <div>
+            <span>Completed</span>
+            <strong id="completedTask">0</strong>
+          </div>
+
+        </div>
+
+
+        <div class="stat-card">
+
+          <div class="stat-icon orange">
+            <i class="fa-regular fa-clock"></i>
+          </div>
+
+          <div>
+            <span>Pending</span>
+            <strong id="pendingTask">0</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- Task List -->
+      <div class="tasks-card">
+
+        <div class="tasks-card-header">
+
+          <div>
+            <span class="section-label">
+              TASK LIST
+            </span>
+
+            <h2>Your tasks</h2>
+          </div>
+
+        </div>
+
+
+        <div id="taskList"></div>
+
+      </div>
+
+    </main>
+
+  </section>
+
+
+
+  <!-- =====================================================
+         SUPABASE
+    ====================================================== -->
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <!-- YOUR EXISTING JAVASCRIPT -->
+  <script src="script.js"></script>
+
+
+  <!-- Password Toggle Only -->
+  <script>
+
+    function setupPasswordToggle(buttonId, inputId) {
+
+      const button =
+        document.getElementById(buttonId);
+
+      const input =
+        document.getElementById(inputId);
+
+      if (!button || !input) return;
+
+
+      button.addEventListener("click", function () {
+
+        if (input.type === "password") {
+
+          input.type = "text";
+
+          button.innerHTML =
+            '<i class="fa-regular fa-eye-slash"></i>';
+
+        } else {
+
+          input.type = "password";
+
+          button.innerHTML =
+            '<i class="fa-regular fa-eye"></i>';
+
+        }
+
+      });
+
+    }
+
+
+    setupPasswordToggle(
+      "loginPasswordToggle",
+      "loginPassword"
+    );
+
+
+    setupPasswordToggle(
+      "registerPasswordToggle",
+      "registerPassword"
+    );
+
+
+    setupPasswordToggle(
+      "confirmPasswordToggle",
+      "confirmPassword"
+    );
+
+  </script>
+
+</body>
+
+</html>

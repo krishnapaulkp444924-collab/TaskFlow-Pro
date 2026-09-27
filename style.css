@@ -1,0 +1,1529 @@
+/* =====================================================
+   TASKFLOW PRO
+   COMPLETE STYLE SHEET
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    background: #f5f7fb;
+    color: #172033;
+}
+
+
+/* =====================================================
+   COMMON
+   ===================================================== */
+
+button,
+input,
+select {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none !important;
+}
+
+
+/* =====================================================
+   AUTH SECTION
+   ===================================================== */
+
+.auth-section {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    background: #f7f9fc;
+}
+
+
+/* =====================================================
+   LEFT SIDE
+   ===================================================== */
+
+.auth-visual {
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+    padding: 55px 7%;
+    background:
+        radial-gradient(
+            circle at 20% 15%,
+            rgba(79, 70, 229, 0.16),
+            transparent 30%
+        ),
+        linear-gradient(
+            145deg,
+            #101936 0%,
+            #172554 48%,
+            #111827 100%
+        );
+    color: white;
+}
+
+
+.visual-glow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(10px);
+    pointer-events: none;
+}
+
+
+.glow-one {
+    width: 280px;
+    height: 280px;
+    top: -100px;
+    right: -80px;
+    background: rgba(99, 102, 241, 0.18);
+}
+
+
+.glow-two {
+    width: 220px;
+    height: 220px;
+    bottom: -80px;
+    left: -70px;
+    background: rgba(59, 130, 246, 0.13);
+}
+
+
+.visual-content {
+    position: relative;
+    z-index: 2;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+
+/* =====================================================
+   BRAND
+   ===================================================== */
+
+.brand,
+.mobile-brand,
+.app-brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+
+.brand {
+    font-size: 22px;
+    font-weight: 800;
+}
+
+
+.brand-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: linear-gradient(
+        135deg,
+        #6366f1,
+        #3b82f6
+    );
+
+    color: white;
+    box-shadow:
+        0 8px 25px rgba(59, 130, 246, 0.28);
+}
+
+
+.brand-pro {
+    color: #818cf8;
+}
+
+
+/* =====================================================
+   HERO
+   ===================================================== */
+
+.hero-content {
+    margin-top: 85px;
+}
+
+
+.eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    margin-bottom: 18px;
+
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1.8px;
+    color: #a5b4fc;
+}
+
+
+.eyebrow span {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #818cf8;
+    box-shadow: 0 0 15px #818cf8;
+}
+
+
+.hero-content h1 {
+    font-size: clamp(44px, 5vw, 68px);
+    line-height: 1.04;
+    letter-spacing: -2.5px;
+    font-weight: 800;
+}
+
+
+.hero-content h1 span {
+    color: #818cf8;
+}
+
+
+.hero-content p {
+    max-width: 570px;
+    margin-top: 24px;
+
+    color: #aeb9d1;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =====================================================
+   PREVIEW CARD
+   ===================================================== */
+
+.preview-card {
+    margin-top: 45px;
+
+    max-width: 620px;
+
+    padding: 24px;
+
+    border-radius: 20px;
+
+    background: rgba(255, 255, 255, 0.075);
+
+    border: 1px solid rgba(255, 255, 255, 0.10);
+
+    backdrop-filter: blur(18px);
+
+    box-shadow:
+        0 20px 50px rgba(0, 0, 0, 0.16);
+}
+
+
+.preview-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.preview-header small {
+    color: #8f9bb7;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+
+.preview-header h3 {
+    margin-top: 5px;
+    font-size: 17px;
+}
+
+
+.preview-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: rgba(129, 140, 248, 0.13);
+
+    color: #a5b4fc;
+}
+
+
+/* Progress */
+
+.progress-area {
+    margin-top: 25px;
+}
+
+
+.progress-text {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 9px;
+
+    color: #aeb9d1;
+    font-size: 12px;
+}
+
+
+.progress-text strong {
+    color: white;
+}
+
+
+.progress-bar {
+    height: 7px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    overflow: hidden;
+}
+
+
+.progress-fill {
+    width: 82%;
+    height: 100%;
+    border-radius: inherit;
+
+    background: linear-gradient(
+        90deg,
+        #6366f1,
+        #60a5fa
+    );
+}
+
+
+/* Mini Tasks */
+
+.mini-tasks {
+    margin-top: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.mini-task {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+
+    color: #b5bfd3;
+    font-size: 12px;
+}
+
+
+.mini-task .task-check {
+    width: 22px;
+    height: 22px;
+
+    flex-shrink: 0;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #6366f1;
+    color: white;
+
+    font-size: 9px;
+}
+
+
+.mini-task .task-check.empty {
+    background: transparent;
+    border: 1px solid #66718b;
+}
+
+
+.mini-task .status {
+    margin-left: auto;
+    color: #818cf8;
+}
+
+
+/* =====================================================
+   FEATURES
+   ===================================================== */
+
+.visual-features {
+    margin-top: 30px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 18px;
+}
+
+
+.visual-features > div {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+
+.visual-features > div > i {
+    width: 34px;
+    height: 34px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background: rgba(129, 140, 248, 0.10);
+
+    color: #a5b4fc;
+}
+
+
+.visual-features strong {
+    display: block;
+    font-size: 12px;
+    color: white;
+}
+
+
+.visual-features span {
+    display: block;
+    margin-top: 3px;
+
+    color: #7f8ba7;
+    font-size: 10px;
+}
+
+
+/* =====================================================
+   RIGHT SIDE
+   ===================================================== */
+
+.auth-panel {
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 45px;
+
+    background: #f7f9fc;
+}
+
+
+.auth-card {
+    width: 100%;
+    max-width: 440px;
+}
+
+
+/* =====================================================
+   LOGIN / REGISTER CARD
+   ===================================================== */
+
+#loginBox,
+#registerBox {
+    padding: 34px;
+
+    background: white;
+
+    border: 1px solid #e7eaf0;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 20px 60px rgba(15, 23, 42, 0.08);
+}
+
+
+#registerBox {
+    animation: registerAnimation 0.3s ease;
+}
+
+
+@keyframes registerAnimation {
+
+    from {
+        opacity: 0;
+        transform: translateY(12px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =====================================================
+   AUTH TOP
+   ===================================================== */
+
+.auth-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+
+.mobile-brand {
+    display: none;
+}
+
+
+.auth-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 7px;
+
+    padding: 8px 11px;
+
+    border-radius: 9px;
+
+    background: #f0f4ff;
+
+    color: #4f46e5;
+
+    font-size: 11px;
+    font-weight: 700;
+}
+
+
+/* =====================================================
+   AUTH HEADING
+   ===================================================== */
+
+.auth-heading h2 {
+    font-size: 29px;
+    letter-spacing: -0.7px;
+}
+
+
+.auth-heading p {
+    margin-top: 8px;
+
+    color: #7a8498;
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* =====================================================
+   FORM
+   ===================================================== */
+
+form {
+    margin-top: 28px;
+}
+
+
+.input-group {
+    margin-bottom: 19px;
+}
+
+
+.input-group label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color: #374151;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+.label-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.input-wrapper {
+    position: relative;
+}
+
+
+.input-icon {
+    position: absolute;
+
+    left: 14px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #9aa3b4;
+
+    font-size: 13px;
+
+    pointer-events: none;
+}
+
+
+.input-wrapper input {
+    width: 100%;
+
+    height: 47px;
+
+    padding: 0 43px;
+
+    border: 1px solid #dfe3ea;
+
+    border-radius: 11px;
+
+    outline: none;
+
+    background: #fbfcfe;
+
+    color: #172033;
+
+    font-size: 13px;
+
+    transition:
+        border-color 0.2s,
+        box-shadow 0.2s,
+        background 0.2s;
+}
+
+
+.input-wrapper input:focus {
+    background: white;
+
+    border-color: #6366f1;
+
+    box-shadow:
+        0 0 0 4px rgba(99, 102, 241, 0.08);
+}
+
+
+.password-toggle {
+    position: absolute;
+
+    right: 8px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    width: 34px;
+    height: 34px;
+
+    border: none;
+
+    background: transparent;
+
+    color: #8b95a7;
+}
+
+
+.password-toggle:hover {
+    color: #4f46e5;
+}
+
+
+/* =====================================================
+   NAME GRID
+   ===================================================== */
+
+.name-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+
+/* =====================================================
+   FORM MESSAGE
+   ===================================================== */
+
+.form-message {
+    min-height: 18px;
+
+    margin: 5px 0 12px;
+
+    font-size: 12px;
+}
+
+
+.form-message.error {
+    color: #dc2626;
+}
+
+
+.form-message.success {
+    color: #16a34a;
+}
+
+
+/* =====================================================
+   PRIMARY BUTTON
+   ===================================================== */
+
+.primary-btn {
+    width: 100%;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+
+    border: none;
+    border-radius: 11px;
+
+    background: linear-gradient(
+        135deg,
+        #4f46e5,
+        #2563eb
+    );
+
+    color: white;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    box-shadow:
+        0 10px 25px rgba(79, 70, 229, 0.20);
+
+    transition:
+        transform 0.2s,
+        box-shadow 0.2s;
+}
+
+
+.primary-btn:hover {
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 13px 30px rgba(79, 70, 229, 0.27);
+}
+
+
+.primary-btn:disabled {
+    opacity: 0.65;
+    cursor: not-allowed;
+    transform: none;
+}
+
+
+/* =====================================================
+   AUTH SWITCH
+   ===================================================== */
+
+.auth-switch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    margin-top: 22px;
+
+    color: #7a8498;
+
+    font-size: 12px;
+}
+
+
+.auth-switch button {
+    border: none;
+    background: transparent;
+
+    color: #4f46e5;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+.auth-switch button:hover {
+    text-decoration: underline;
+}
+
+
+/* =====================================================
+   SECURITY NOTE
+   ===================================================== */
+
+.security-note {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+
+    margin-top: 23px;
+    padding-top: 18px;
+
+    border-top: 1px solid #edf0f4;
+
+    color: #9aa3b4;
+
+    font-size: 10px;
+}
+
+
+.security-note i {
+    color: #6366f1;
+}
+
+
+/* =====================================================
+   APP SECTION
+   ===================================================== */
+
+.app-section {
+    min-height: 100vh;
+    background: #f6f8fc;
+}
+
+
+/* =====================================================
+   APP HEADER
+   ===================================================== */
+
+.app-header {
+    height: 76px;
+
+    padding: 0 6%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: white;
+
+    border-bottom: 1px solid #e8ebf1;
+}
+
+
+.app-brand {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+
+.user-area {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+}
+
+
+.user-avatar {
+    width: 38px;
+    height: 38px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #eef2ff;
+
+    color: #4f46e5;
+}
+
+
+.user-info span {
+    display: block;
+
+    color: #8a94a7;
+
+    font-size: 10px;
+}
+
+
+.user-info strong {
+    display: block;
+
+    margin-top: 2px;
+
+    font-size: 12px;
+}
+
+
+.logout-btn {
+    margin-left: 14px;
+
+    padding: 9px 13px;
+
+    border: 1px solid #e3e7ee;
+
+    border-radius: 9px;
+
+    background: white;
+
+    color: #5f6879;
+
+    font-size: 11px;
+    font-weight: 600;
+}
+
+
+.logout-btn:hover {
+    background: #f8f9fb;
+}
+
+
+/* =====================================================
+   APP CONTAINER
+   ===================================================== */
+
+.app-container {
+    max-width: 1150px;
+
+    margin: 0 auto;
+
+    padding: 55px 25px;
+}
+
+
+.app-title-row {
+    margin-bottom: 30px;
+}
+
+
+.section-label {
+    color: #6366f1;
+
+    font-size: 10px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+}
+
+
+.app-title-row h1 {
+    margin-top: 7px;
+
+    font-size: 32px;
+
+    letter-spacing: -1px;
+}
+
+
+.app-title-row p {
+    margin-top: 8px;
+
+    color: #7d8798;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   CREATE TASK
+   ===================================================== */
+
+.task-create-card {
+    display: grid;
+
+    grid-template-columns: 1fr 160px 150px 130px;
+
+    gap: 10px;
+
+    padding: 15px;
+
+    background: white;
+
+    border: 1px solid #e7eaf0;
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 8px 30px rgba(15, 23, 42, 0.04);
+}
+
+
+.task-input-main {
+    position: relative;
+}
+
+
+.task-input-main i {
+    position: absolute;
+
+    left: 13px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #8e98aa;
+}
+
+
+.task-input-main input,
+.task-create-card select,
+.task-create-card > input {
+    width: 100%;
+    height: 45px;
+
+    border: 1px solid #e0e4eb;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    background: #fbfcfe;
+
+    font-size: 12px;
+}
+
+
+.task-input-main input {
+    padding: 0 13px 0 36px;
+}
+
+
+.task-create-card select,
+.task-create-card > input {
+    padding: 0 10px;
+}
+
+
+.task-input-main input:focus,
+.task-create-card select:focus,
+.task-create-card > input:focus {
+    border-color: #6366f1;
+
+    box-shadow:
+        0 0 0 3px rgba(99, 102, 241, 0.07);
+}
+
+
+.add-task-btn {
+    height: 45px;
+}
+
+
+/* =====================================================
+   TOOLBAR
+   ===================================================== */
+
+.task-toolbar {
+    margin-top: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.search-box {
+    position: relative;
+
+    width: 300px;
+}
+
+
+.search-box i {
+    position: absolute;
+
+    left: 13px;
+    top: 50%;
+
+    transform: translateY(-50%);
+
+    color: #9aa3b4;
+}
+
+
+.search-box input {
+    width: 100%;
+    height: 40px;
+
+    padding: 0 13px 0 36px;
+
+    border: 1px solid #e1e5ec;
+
+    border-radius: 9px;
+
+    outline: none;
+
+    background: white;
+
+    font-size: 12px;
+}
+
+
+.clear-btn {
+    height: 40px;
+
+    padding: 0 14px;
+
+    border: 1px solid #e1e5ec;
+
+    border-radius: 9px;
+
+    background: white;
+
+    color: #667085;
+
+    font-size: 11px;
+}
+
+
+.clear-btn:hover {
+    color: #dc2626;
+}
+
+
+/* =====================================================
+   STATS
+   ===================================================== */
+
+.stats-grid {
+    margin-top: 20px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 15px;
+}
+
+
+.stat-card {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    padding: 18px;
+
+    background: white;
+
+    border: 1px solid #e7eaf0;
+
+    border-radius: 14px;
+}
+
+
+.stat-icon {
+    width: 40px;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 11px;
+}
+
+
+.stat-icon.blue {
+    background: #eef2ff;
+    color: #4f46e5;
+}
+
+
+.stat-icon.green {
+    background: #ecfdf3;
+    color: #16a34a;
+}
+
+
+.stat-icon.orange {
+    background: #fff7ed;
+    color: #ea580c;
+}
+
+
+.stat-card span {
+    display: block;
+
+    color: #8a94a7;
+
+    font-size: 10px;
+}
+
+
+.stat-card strong {
+    display: block;
+
+    margin-top: 3px;
+
+    font-size: 21px;
+}
+
+
+/* =====================================================
+   TASKS CARD
+   ===================================================== */
+
+.tasks-card {
+    margin-top: 22px;
+
+    padding: 24px;
+
+    background: white;
+
+    border: 1px solid #e7eaf0;
+
+    border-radius: 16px;
+}
+
+
+.tasks-card-header {
+    margin-bottom: 18px;
+}
+
+
+.tasks-card-header h2 {
+    margin-top: 5px;
+
+    font-size: 20px;
+}
+
+
+/* =====================================================
+   TASK ITEM
+   ===================================================== */
+
+.task-item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+
+    padding: 15px 0;
+
+    border-bottom: 1px solid #edf0f4;
+}
+
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+
+.task-check-btn {
+    width: 23px;
+    height: 23px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: 1.5px solid #cbd2df;
+
+    border-radius: 50%;
+
+    background: white;
+
+    color: white;
+
+    font-size: 10px;
+}
+
+
+.task-item.completed .task-check-btn {
+    border-color: #4f46e5;
+
+    background: #4f46e5;
+}
+
+
+.task-content {
+    flex: 1;
+}
+
+
+.task-content h3 {
+    font-size: 13px;
+    font-weight: 600;
+}
+
+
+.task-item.completed .task-content h3 {
+    color: #9aa3b4;
+
+    text-decoration: line-through;
+}
+
+
+.task-meta {
+    margin-top: 6px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #929bad;
+
+    font-size: 10px;
+}
+
+
+.priority-badge {
+    padding: 4px 7px;
+
+    border-radius: 5px;
+
+    font-size: 9px;
+    font-weight: 700;
+}
+
+
+.priority-badge.low {
+    background: #ecfdf3;
+    color: #16a34a;
+}
+
+
+.priority-badge.medium {
+    background: #eff6ff;
+    color: #2563eb;
+}
+
+
+.priority-badge.high {
+    background: #fef2f2;
+    color: #dc2626;
+}
+
+
+.task-delete-btn {
+    border: none;
+
+    background: transparent;
+
+    color: #a0a8b7;
+
+    font-size: 13px;
+}
+
+
+.task-delete-btn:hover {
+    color: #dc2626;
+}
+
+
+/* =====================================================
+   EMPTY STATE
+   ===================================================== */
+
+.empty-state {
+    text-align: center;
+
+    padding: 45px 20px;
+
+    color: #8d96a7;
+}
+
+
+.empty-state i {
+    font-size: 30px;
+
+    margin-bottom: 12px;
+
+    color: #b2bac8;
+}
+
+
+.empty-state h3 {
+    color: #4b5563;
+
+    font-size: 14px;
+}
+
+
+.empty-state p {
+    margin-top: 5px;
+
+    font-size: 11px;
+}
+
+
+/* =====================================================
+   RESPONSIVE
+   ===================================================== */
+
+@media (max-width: 1050px) {
+
+    .auth-section {
+        grid-template-columns: 1fr;
+    }
+
+
+    .auth-visual {
+        min-height: auto;
+
+        padding: 45px 7% 50px;
+    }
+
+
+    .auth-panel {
+        min-height: auto;
+
+        padding: 40px 25px 60px;
+    }
+
+
+    .hero-content {
+        margin-top: 55px;
+    }
+
+
+    .hero-content h1 {
+        font-size: 55px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .auth-visual {
+        padding: 35px 20px 40px;
+    }
+
+
+    .brand {
+        font-size: 20px;
+    }
+
+
+    .hero-content {
+        margin-top: 45px;
+    }
+
+
+    .hero-content h1 {
+        font-size: 42px;
+
+        letter-spacing: -1.5px;
+    }
+
+
+    .hero-content p {
+        font-size: 14px;
+    }
+
+
+    .preview-card {
+        margin-top: 32px;
+    }
+
+
+    .visual-features {
+        grid-template-columns: 1fr;
+
+        gap: 14px;
+    }
+
+
+    .auth-panel {
+        padding: 25px 15px 50px;
+    }
+
+
+    #loginBox,
+    #registerBox {
+        padding: 25px 20px;
+    }
+
+
+    .name-grid {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+
+    .app-header {
+        height: auto;
+
+        padding: 18px 20px;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+
+    .user-info {
+        display: none;
+    }
+
+
+    .logout-btn {
+        margin-left: 0;
+    }
+
+
+    .task-create-card {
+        grid-template-columns: 1fr;
+    }
+
+
+    .task-toolbar {
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 10px;
+    }
+
+
+    .search-box {
+        width: 100%;
+    }
+
+
+    .stats-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 450px) {
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+
+    .preview-card {
+        padding: 18px;
+    }
+
+
+    #loginBox,
+    #registerBox {
+        padding: 22px 16px;
+    }
+
+
+    .auth-heading h2 {
+        font-size: 25px;
+    }
+
+}
